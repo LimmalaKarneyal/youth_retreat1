@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Quiz</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Treasure Hunt</h1>
+        <div id="quiz-box" class="mt-4">
+            <h4 id="question"></h4>
+            <div id="options" class="mb-3">
+                <!-- Options will be inserted here -->
+            </div>
+            <button id="submitBtn" class="btn btn-primary" onclick="checkAnswer()">Submit</button>
+            <p id="clue" class="mt-3"></p>
+        </div>
+        <div id="disqualified" class="mt-5 d-none">
+            <h2>Sorry! You are disqualified.</h2>
+            <button class="btn btn-danger" onclick="restartQuiz()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
